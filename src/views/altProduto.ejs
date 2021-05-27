@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alterar Produtos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="/views/css/altProduto.css">
+</head>
+
+<body onload="buscarProdutos(1)">
+    <header id="header">
+        <a id="logo" href="/">ACM</a>
+        <nav id="nav">
+            <a id="vender" href="/vender">VENDER</a>
+        </nav>
+    </header>
+    <div class="all">
+        <h3>ALTERAR PRODUTO</h3>
+        <br>
+        <form action="http://localhost:999/alterar" method="POST">
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                    <label for="ref" class="col-form-label">REF:</label>
+                </div>
+                <div class="col-auto">
+                    <select id="ref" name="ref" class="ls-select" onchange="preencherDados()" style="width:200px">
+                        <option value=""></option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                    <label for="descr" class="col-form-label">Descrição: </label>
+                </div>
+                <div class="col-auto">
+                    <input type="text" id="desc" name="desc" class="form-control">
+                </div>
+            </div>
+            <br>
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                    <label for="quant" class="col-form-label">Quantidade: </label>
+                </div>
+                <div class="col-auto">
+                    <input type="number" id="quant" name="quant" class="form-control">
+                </div>
+            </div>
+            <br>
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                    <label for="custo" class="col-form-label">Custo: </label>
+                </div>
+                <div class="col-auto">
+                    <input type="text" id="custo" name="custo" class="form-control">
+                </div>
+            </div>
+            <br>
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                    <label for="preco" class="col-form-label">Preço: </label>
+                </div>
+                <div class="col-auto">
+                    <input type="text" id="preco" name="preco" class="form-control">
+                </div>
+            </div>
+            <br>
+            <button type="button" onclick="window.location.href = '/'" class="btn btn-primary">Voltar</button>
+            <button type="submit" id="submit" class="btn btn-primary">Alterar</button>
+        </form>
+    </div>
+    <script src="/views/js/altProduto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+header {
+    display: flex;
+    padding: .5rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    background:rgb(0, 0, 0);
+}
+
+header a {
+    text-decoration: none;
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: yellow;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+}
+
+div.all {
+    position: relative;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+div.line h3,button {
+    display: inline;
+}
+
+button#novo {
+    position: absolute;
+    right: 150px;
+}
+
+button#alt {
+    position: absolute;
+    right: 0px;
+}
+
+table,
+th,
+td {
+    border: 1.9px solid black;
+}
+
+th,
+td {
+    padding: 15px;
+}
+
+th {
+    text-align: center;
+}

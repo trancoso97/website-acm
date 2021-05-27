@@ -1,0 +1,39 @@
+header {
+    display: flex;
+    padding: .5rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    background:rgb(0, 0, 0);
+}
+
+header a {
+    text-decoration: none;
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: yellow;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+}
+
+div.all {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+button#submit {
+    position: absolute;
+    left: 60%;
+}

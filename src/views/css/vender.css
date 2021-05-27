@@ -1,0 +1,76 @@
+body {
+    position: relative;
+}
+
+header {
+    display: flex;
+    padding: .5rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    background:rgb(0, 0, 0);
+}
+
+header a {
+    text-decoration: none;
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: yellow;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+}
+
+input, select, label {
+    display: inline;
+}
+
+div.add-item {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 100px;
+    padding: 30px;
+    border: solid 1px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+div.add-item div {
+    display: inline;
+    margin-left: 20px;
+}
+
+div.add-item div label {
+    margin-right: 5px;
+}
+
+div.add-item button {
+    margin-left: 200px;
+}
+
+input#preco {
+    width: 100px;
+    height: 35px;
+    text-align: end;
+}
+
+input#quant {
+    width: 80px;
+    height: 35px;
+    text-align: center;
+}
+
+p.item {
+    margin-left: 10%;
+}
